@@ -12,3 +12,8 @@ class Vehiculo (self, marca, modelo, año, velocidad_actual, nivel_combustible):
     def set_marca(self,marca):
         return self.__marca= marca
     
+    def get_modelo(self):
+        return self.__modelo
+    
+    def set_modelo(self,modelo):
+        return self.__modelo= modelo
