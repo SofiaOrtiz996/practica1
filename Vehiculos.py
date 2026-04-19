@@ -41,3 +41,9 @@ class Vehiculo (self, marca, modelo, año, velocidad_actual, nivel_combustible):
             self.__nivel_combustible -= acelerar*0.1
             if self.__nivel_combustible <0:
                 self.__nivel_combustible=0
+    
+    def viaje (self, distancia):
+        consumo= distancia/10
+        if self.__nivel_combustible>= consumo:
+            return True
+        return False
