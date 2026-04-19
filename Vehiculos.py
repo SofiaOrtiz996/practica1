@@ -58,3 +58,6 @@ class Vehiculo (self, marca, modelo, año, velocidad_actual, nivel_combustible):
     
 vehiculo1= Vehiculo("Toyota", "Raize", 2020, 60, 50)
 vehiculo1.info()
+
+print("Aumentando velocidad")
+vehiculo1.aumentar_velocidad(20)
