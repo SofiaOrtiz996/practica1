@@ -22,3 +22,9 @@ class Vehiculo (self, marca, modelo, año, velocidad_actual, nivel_combustible):
         return self.__año
     def set_año(self,año):
         return self.__año= año
+
+    def get_velocidad_actual(self):
+        return self.__velocidad_actual
+    def set_velocidad_actual(self,velocidad_actual):
+        if velocidad_actual >=0:
+            self.__velocidad_actual= velocidad_actual
