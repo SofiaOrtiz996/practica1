@@ -61,3 +61,6 @@ vehiculo1.info()
 
 print("Aumentando velocidad")
 vehiculo1.aumentar_velocidad(20)
+
+print("¿Se puede viajar a 200 km?")
+print (vehiculo1.viaje(200))
