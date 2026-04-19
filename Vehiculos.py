@@ -55,3 +55,6 @@ class Vehiculo (self, marca, modelo, año, velocidad_actual, nivel_combustible):
         print("Año: ", self.__año)
         print("Velocidad Actual: ", self.__velocidad_actual, "Km/h")
         print("Nivel de Combustible: ", self.__nivel_combustible, "%")
+    
+vehiculo1= Vehiculo("Toyota", "Raize", 2020, 60, 50)
+vehiculo1.info()
