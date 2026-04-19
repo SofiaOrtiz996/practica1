@@ -34,3 +34,10 @@ class Vehiculo (self, marca, modelo, año, velocidad_actual, nivel_combustible):
     def set_nivel_combustible(self, nivel_combustible):
         if 0<=nivel_combustible and nivel_combustible<=100:
             self.__nivel_combustible= nivel_combustible
+    
+    def aumentar_velocidad (self, acelerar):
+        if acelerar >0:
+            self.__velocidad_actual += acelerar
+            self.__nivel_combustible -= acelerar*0.1
+            if self.__nivel_combustible <0:
+                self.__nivel_combustible=0
