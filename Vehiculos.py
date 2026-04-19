@@ -1,4 +1,4 @@
-class Vehiculo (self, marca, modelo, año, velocidad_actual, nivel_combustible):
+class Vehiculo:
     def_init_(self,marca,modelo,año, velocidad_actual,nivel_combustible):
         self.__marca= marca
         self.__modelo= modelo
