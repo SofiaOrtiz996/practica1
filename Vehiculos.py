@@ -28,3 +28,9 @@ class Vehiculo (self, marca, modelo, año, velocidad_actual, nivel_combustible):
     def set_velocidad_actual(self,velocidad_actual):
         if velocidad_actual >=0:
             self.__velocidad_actual= velocidad_actual
+
+    def get_nivel_combustible(self):
+        return self.__nivel_combustible
+    def set_nivel_combustible(self, nivel_combustible):
+        if 0<=nivel_combustible and nivel_combustible<=100:
+            self.__nivel_combustible= nivel_combustible
