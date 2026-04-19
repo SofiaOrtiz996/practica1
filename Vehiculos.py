@@ -47,3 +47,11 @@ class Vehiculo (self, marca, modelo, año, velocidad_actual, nivel_combustible):
         if self.__nivel_combustible>= consumo:
             return True
         return False
+    
+    def info (self):
+        print ("***Informacion del Vehiculo***")
+        print ("Marca: ", self.__marca)
+        print("Modelo: ", self.__modelo)
+        print("Año: ", self.__año)
+        print("Velocidad Actual: ", self.__velocidad_actual, "Km/h")
+        print("Nivel de Combustible: ", self.__nivel_combustible, "%")
